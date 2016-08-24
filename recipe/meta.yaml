@@ -1,9 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "1.5.6" %}
-{% set sha256 = "5c082bdabead3cc0a8ffb172eae2721bd12741140934de5dd8927fb6bd2a4d6b" %}
-
-{% set gh_org = "ronf"  %}
-{% set gh_repo = name %}
+{% set version = "1.6.0" %}
+{% set sha256 = "445f6e60de100604faf16ba470ce672e8b5a1bd6dccb25f9ef31544cbec6fb76" %}
 
 package:
   name: {{ name }}
@@ -11,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/ronf/asyncssh/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
