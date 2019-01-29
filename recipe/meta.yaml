@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "1.15.0" %}
-{% set sha256 = "534fd40e5b81f3f36de3bbd57768fa4916679aeffce73d04625c751dd8318dcb" %}
+{% set version = "1.15.1" %}
+{% set sha256 = "aee91960f1b5db8558bc6ea524f8664aefada91e0edd366cc4bea4cf148a0200" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [py < 34]
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
