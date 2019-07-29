@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "1.15.1" %}
-{% set sha256 = "aee91960f1b5db8558bc6ea524f8664aefada91e0edd366cc4bea4cf148a0200" %}
+{% set version = "1.17.1" %}
+{% set sha256 = "f12bf6914f1b48fefa4268d63ebc607d617400f8978f316731fe9b588b6a3995" %}
 
 package:
   name: {{ name }}
@@ -12,17 +12,19 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [py < 34]
+  skip: True
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
     - setuptools
-
+  host:
+    - pip
   run:
-    - python
+    - python >=3.4
     - cryptography
 
 test:
