@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
   run:
-    - python >= 3.4
+    - python >=3.4
     - cryptography
 
 test:
