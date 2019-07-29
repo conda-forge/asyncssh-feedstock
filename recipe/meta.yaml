@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [py < 34]
+  skip: True
   number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -24,7 +24,7 @@ requirements:
   host:
     - pip
   run:
-    - python
+    - python >= 3.4
     - cryptography
 
 test:
