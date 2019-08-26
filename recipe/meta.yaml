@@ -12,16 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True
   number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
-    - setuptools
   host:
+    - python >=3.4
+    - setuptools
     - pip
   run:
     - python >=3.4
