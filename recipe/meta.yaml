@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "2.0.1" %}
-{% set sha256 = "8ec3a887475c06528d93745114914be4b896d5fc28b84b3d3e5863c4bb0d5080" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "13f2719858cce8d91b8c56c6373f9d7e3c2719ea6007e9cc5e35133ef189170e" %}
 
 package:
   name: {{ name }}
