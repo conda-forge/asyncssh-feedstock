@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "13f2719858cce8d91b8c56c6373f9d7e3c2719ea6007e9cc5e35133ef189170e" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "39de4b589053dcd6afb6dd4bdd0558e3c083465c13554c22606cb67b9c3907cd" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ test:
 about:
   home: https://github.com/ronf/asyncssh
   license: EPL-1.0
-  summary: "AsyncSSH: Asynchronous SSHv2 client and server library"
+  summary: 'AsyncSSH: Asynchronous SSHv2 client and server library'
 
 extra:
   recipe-maintainers:
