@@ -23,6 +23,8 @@ requirements:
   run:
     - python >=3.4
     - cryptography
+    - pyopenssl >=17.0.0
+    - python-gssapi >=1.2.0
 
 test:
   imports:
