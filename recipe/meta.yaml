@@ -25,6 +25,7 @@ requirements:
     - cryptography
     - pyopenssl >=17.0.0
     - python-gssapi >=1.2.0
+    - typing_extensions >=3.6
 
 test:
   imports:
