@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "2.8.1" %}
-{% set sha256 = "0648eba58d72653755f28e26c9bd83147d9652c1f2f5e87fbf5a87d7f8fbf83a" %}
+{% set version = "2.9.0" %}
+{% set sha256 = "3cc337d806619465455bf187e8a91e3f575423718184e238f9ae8c41c4f33af1" %}
 
 package:
   name: {{ name }}
@@ -25,6 +25,7 @@ requirements:
     - cryptography
     - pyopenssl >=17.0.0
     - python-gssapi >=1.2.0
+    - typing_extensions >=3.6
 
 test:
   imports:
