@@ -1,11 +1,11 @@
-About asyncssh
-==============
+About asyncssh-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asyncssh-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ronf/asyncssh
 
 Package license: EPL-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asyncssh-feedstock/blob/main/LICENSE.txt)
 
 Summary: AsyncSSH: Asynchronous SSHv2 client and server library
 
