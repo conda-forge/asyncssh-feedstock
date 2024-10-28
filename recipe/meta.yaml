@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "2.17.0" %}
-{% set sha256 = "3b159c105aa388c1e2245c4faf483f540ada8cad99402281119100166e5edb3c" %}
+{% set version = "2.18.0" %}
+{% set sha256 = "1a322161c01f60b9719dc8f39f80db71e61f3f5e04abbc3420ce503126d87123" %}
 
 package:
   name: {{ name }}
@@ -17,19 +17,23 @@ build:
 
 requirements:
   host:
-    - python >=3.4
+    - python >=3.8
     - setuptools
     - pip
   run:
-    - python >=3.4
-    - cryptography
-    - pyopenssl >=17.0.0
+    - python >=3.8
+    - cryptography >=39.0
+    - pyopenssl >=23.0.0
     - python-gssapi >=1.2.0
-    - typing_extensions >=3.6
+    - typing_extensions >=4.0.0
 
 test:
   imports:
     - asyncssh
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/ronf/asyncssh
