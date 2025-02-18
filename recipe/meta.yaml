@@ -1,6 +1,6 @@
 {% set name = "asyncssh" %}
-{% set version = "2.19.0" %}
-{% set sha256 = "723dead4d068b558708dc66a4ca7e7a93a813aa9416036eccb9af4c03ae2cf30" %}
+{% set version = "2.20.0" %}
+{% set sha256 = "020b6e384b2328ef8683908ad8e73de9ec2b9b62fd964571ea957bba98412983" %}
 
 package:
   name: {{ name }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
