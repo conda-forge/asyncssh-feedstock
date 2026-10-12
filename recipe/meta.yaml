@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - cryptography >=39.0
+    - cryptography >=48.0.1
     - pyopenssl >=23.0.0
     - python-gssapi >=1.2.0
     - typing_extensions >=4.0.0
